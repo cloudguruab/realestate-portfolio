@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title></title>
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+        <!--Replace with your tailwind.css once created-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <!-- Start Flex Container -->
+        <div class="w-screen h-screen min-w-screen">
+            <header class="flex flex-col bg-black w-full shadow-md">
+                <!-- Top Window -->
+                <div class="flex items-end mt-2 overflow-x-auto">
+                    <!-- Window Button -->
+                    <div class="flex items-center self-center mx-4">
+                        <button class="w-3 h-3 bg-red-600 rounded-full mx-1 focus:outline-none"></button>
+                        <button class="w-3 h-3 bg-yellow-600 rounded-full mx-1 focus:outline-none"></button>
+                        <button class="w-3 h-3 bg-green-600 rounded-full mx-1 focus:outline-none"></button>
+                    </div>
+                    <!-- Active Tab -->
+                    <div
+                        class="flex items-end justify-between bg-gray-100 rounded-t-lg text-sm w-24 sm:w-48 py-1 sm:py-2">
+                        <a href="#"
+                            class="whitespace-no-wrap text-left px-2 sm:px-4 overflow-x-hidden truncate text-xs sm:text-md text-gray-700">Tailwindow
+                            Component collection and UI Elements</a>
+                        <button class="self-center flex-shrink-0 w-2 sm:w-3 h-2 sm:h-3 mx-1 sm:mx-3 focus:outline-none">
+                            <svg class="fill-current text-gray-500 w-full h-full" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path
+                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Inactive Tab -->
+                    <div
+                        class="flex items-end justify-between bg-gray-400 rounded-t-lg text-sm w-24 sm:w-48 py-1 sm:py-2 opacity-75">
+                        <a href="#"
+                            class="whitespace-no-wrap text-left px-2 sm:px-4 overflow-x-hidden truncate text-xs sm:text-md text-gray-700">Tailwind
+                            CSS</a>
+                        <button class="self-center flex-shrink-0 w-2 sm:w-3 h-2 sm:h-3 mx-1 sm:mx-3 focus:outline-none">
+                            <svg class="fill-current text-gray-500 w-full h-full" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path
+                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Add Button -->
+                    <div class="flex self-center mx-2">
+                        <button
+                            class="w-6 h-6 text-xl leading-none align-middle hover:bg-gray-400 rounded-full text-gray-600 focus:outline-none">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <!-- Bottom Window -->
+                <div class="flex items-center justify-between bg-gray-100">
+                    <!-- Align Left -->
+                    <div class="flex flex-grow my-1 mx-2">
+                        <!-- Navigation -->
+                        <div class="flex items-center my-1 mx-2">
+                            <svg class="fill-current text-gray-500 w-4 h-4 mr-4" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" />
+                            </svg>
+                            <svg class="fill-current text-gray-400 w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" />
+                            </svg>
+                        </div>
+                        <!-- Search Box -->
+                        <div class="flex my-1 mx-2 w-3/4">
+                            <input type="text"
+                                class="rounded-full w-full shadow bg-gray-300 px-4 font-light text-sm text-gray-700"
+                                value="https://www.tailwindow.com">
+                        </div>
+                    </div>
+                    <!-- Align Right -->
+                    <div class="flex">
+                        <!-- Account -->
+                        <a href="#">
+                            <svg class="fill-current text-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 496 512">
+                                <path
+                                    d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z" />
+                            </svg>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <a href="#">
+                            <svg class="fill-current text-gray-500 w-6 h-6 mx-2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 192 512">
+                                <path
+                                    d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </header>
+            <!-- Browser Window -->
+            <div class="relative bg-black">
+
+                <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
+
+                    <div
+                        class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:mr-20 md:items-start md:text-left md:mb-0 lg:text-center">
+                        <h1
+                            class="mb-8 text-2xl font-bold tracking-tighter text-center text-white lg:text-left lg:text-2xl title-font">
+                            A pretty long lenght display headline ready to convert visitors into users.
+                        </h1>
+                        <p class="mb-8 text-base leading-relaxed text-center text-white lg:text-left lg:text-1xl">
+                            Deploy
+                            your mvp in
+                            minutes, not days. WT offers you a a wide selection swapable sections for your landing
+                            page.You
+                            are going to have
+                            fun building it, I did.
+                        </p>
+                        <p class="flex items-center mb-2 text-white"><span
+                                class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                                </svg>
+                            </span>
+                            Vexillologist pitchfork
+                        </p>
+                        <p class="flex items-center mb-2 text-white">
+                            <span
+                                class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                                </svg>
+                            </span>
+                            Tumeric plaid portland
+                        </p>
+                        <p class="flex items-center mb-6 text-white">
+                            <span
+                                class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                                </svg>
+                            </span>
+                            Mixtape chillwave tumeric
+                        </p>
+                    </div>
+                    <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
+                        <img class="object-cover object-center rounded-lg " alt="hero"
+                            src="https://dummyimage.com/720x600/F3F4F7/8693ac">
+                    </div>
+                </div>
+                <div class="absolute inset-x-0 bottom-0">
+                    <svg viewBox="0 0 224 12" fill="currentColor" class="w-full -mb-1 text-white"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z">
+                        </path>
+                    </svg>
+                </div>
+
+            </div>
+
+
+
+            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+                    <h2
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
+                        <span class="relative inline-block">
+
+                            <span class="relative">Testimonials</span>
+                        </span>
+                    </h2>
+
+                </div>
+                <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+                    <div class="p-8 bg-white border rounded shadow-sm">
+                        <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="/"
+                                class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                                aria-label="Category">weekend</a>
+                            <span class="text-gray-600">— 1 Feb 2020</span>
+                        </p>
+                        <a href="/" aria-label="Article" title="Jingle Bells"
+                            class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Jingle
+                            Bells</a>
+                        <p class="mb-5 text-gray-700">
+                            Some pilots get picked and become television programs. Some don't, become nothing.
+                        </p>
+                        <div class="flex items-center">
+                            <a href="/" aria-label="Author" title="Author" class="mr-3">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                    alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+                            </a>
+                            <div>
+                                <a href="/" aria-label="Author" title="Author"
+                                    class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Vasile
+                                    Melinte</a>
+                                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 bg-white border rounded shadow-sm">
+                        <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="/"
+                                class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                                aria-label="Category">holidays</a>
+                            <span class="text-gray-600">— 15 Nov 2020</span>
+                        </p>
+                        <a href="/" aria-label="Article" title="Happy new Year"
+                            class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Happy
+                            new Year</a>
+                        <p class="mb-5 text-gray-700">
+                            Pommy ipsum smeg head whizz morris dancers come hither, bugger codswallop gob. Taking the
+                            mick middle class bog.
+                        </p>
+                        <div class="flex items-center">
+                            <a href="/" aria-label="Author" title="Author" class="mr-3">
+                                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                    alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+                            </a>
+                            <div>
+                                <a href="/" aria-label="Author" title="Author"
+                                    class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">John
+                                    Doe</a>
+                                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 bg-white border rounded shadow-sm">
+                        <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="/"
+                                class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                                aria-label="Category">programming</a>
+                            <span class="text-gray-600">— 28 Dec 2020</span>
+                        </p>
+                        <a href="/" aria-label="Article" title="Why i love C++"
+                            class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Why
+                            i love C++</a>
+                        <p class="mb-5 text-gray-700">
+                            Sportacus andrew weatherall goose Refined gentlemen super mario des lynam alpha trion zap
+                            rowsdower.
+                        </p>
+                        <div class="flex items-center">
+                            <a href="/" aria-label="Author" title="Author" class="mr-3">
+                                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                                    alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+                            </a>
+                            <div>
+                                <a href="/" aria-label="Author" title="Author"
+                                    class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Andrew
+                                    Larkin</a>
+                                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+                        <h2
+                            class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
+                            <span class="relative inline-block">
+
+                                <span class="relative">Portfolio</span>
+                            </span>
+                        </h2>
+
+                    </div>
+                    <div class="flex flex-wrap md:-m-2 -m-1">
+                        <div class="flex flex-wrap w-1/2">
+                            <div class="md:p-2 p-1 w-1/2">
+                                <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                    src="https://dummyimage.com/500x300">
+                            </div>
+                            <div class="md:p-2 p-1 w-1/2">
+                                <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                    src="https://dummyimage.com/501x301">
+                            </div>
+                            <div class="md:p-2 p-1 w-full">
+                                <img alt="gallery" class="w-full h-full object-cover object-center block"
+                                    src="https://dummyimage.com/600x360">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-1/2">
+                            <div class="md:p-2 p-1 w-full">
+                                <img alt="gallery" class="w-full h-full object-cover object-center block"
+                                    src="https://dummyimage.com/601x361">
+                            </div>
+                            <div class="md:p-2 p-1 w-1/2">
+                                <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                    src="https://dummyimage.com/502x302">
+                            </div>
+                            <div class="md:p-2 p-1 w-1/2">
+                                <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                    src="https://dummyimage.com/503x303">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-gray-600 body-font relative">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+                    <h2
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
+                        <span class="relative inline-block">
+
+                            <span class="relative">Contact Us</span>
+                        </span>
+                    </h2>
+
+                </div>
+                <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+
+                    <div
+                        class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map"
+                            marginheight="0" marginwidth="0" scrolling="no"
+                            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=@35.7796,-78.6382&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                            style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                            <div class="lg:w-1/2 px-6">
+                                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                                <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                                <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+                                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE
+                                </h2>
+                                <p class="leading-relaxed">123-456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+                        <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo
+                            fashion axe
+                        </p>
+                        <div class="relative mb-4">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                        <button
+                            class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                        <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook
+                            viral
+                            artisan.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="font-sans bg-black text-white py-8 px-4">
+                <div class="mx-auto container overflow-hidden flex flex-col lg:flex-row justify-between">
+                    <a href="/" class="block mr-4 w-1/2">
+                        <img src="https://stitches.hyperyolo.com/images/logo-white.png" class="w-32" alt="logo">
+                    </a>
+                    <div class="w-1/2 flex text-sm mt-6 lg:mt-0">
+                        <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                            <li
+                                class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">
+                                Product</li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Popular</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Trending</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Catalog</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Features</a>
+                            </li>
+                        </ul>
+                        <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                            <li
+                                class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">
+                                Company</li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Press
+                                    Release</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Mission</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Strategy</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Works</a>
+                            </li>
+                        </ul>
+                        <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                            <li
+                                class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">
+                                Info</li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Support</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Developers</a>
+                            </li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Customer
+                                    Services</a></li>
+                            <li><a href="#"
+                                    class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Started
+                                    Guide</a>
+                            </li>
+                        </ul>
+                        <div class="text-gray-700 flex flex-col">
+                            <div class="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Follow Us
+                            </div>
+                            <div class="flex pl-4 justify-start">
+                                <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline"
+                                    href="#"><i class="fab fa-github-alt"></i></a>
+                                <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline"
+                                    href="#"><i class="fab fa-slack"></i></a>
+                                <a class="block flex items-center text-white hover:text-gray-500 no-underline"
+                                    href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 mt-4 text-gray-700 border-t border-gray-900 text-center"> ©2019 Hyperyolo. All rights
+                    reserved.</div>
+            </footer>
+
+        </div>
+        <!-- End Flex Container -->
+
+    </body>
+
+</html>
